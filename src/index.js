@@ -25,3 +25,7 @@ db.connect((error) => {
 app.get("/", (req, res) => {
   res.status(201).json({ msg: "hi" });
 });
+
+app.get("/temp", (req, res) => {
+  res.send("hi");
+});
